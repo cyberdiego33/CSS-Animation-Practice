@@ -1,8 +1,30 @@
 @import url(../general.css);
 
+:root {
+    --angle: 0deg;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
+
 .gradient {
     padding: 2px;
-    background: linear-gradient( 140deg, purple, blue, yellow);
+    background: conic-gradient( from var(--angle), purple, blue, yellow, purple);
+
+    animation: spin 2s linear infinite;
 }
 
 .start-coding {

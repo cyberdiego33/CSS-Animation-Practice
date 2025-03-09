@@ -7,8 +7,7 @@
 
 @keyframes loading {
     50% {
-        width: 27px;
-        height: 27px;
+        transform: scale(0.8);
         background-color: rgb(161, 155, 155);
     }
 }

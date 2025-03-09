@@ -1,3 +1,14 @@
+:root {
+    --bc-Soft-Gray: #f4f4f4;
+    --bc-Cool-White: #fafafa;
+    --bc-Muted-Blue: #e3f2fd;
+    --bc-Deep-Navy: #1e1e2e;
+    --bc-Soft-Charcoal: #282c34;
+    --bc-Muted-Purple: #3b3b58;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +29,7 @@ body {
     grid-auto-rows: 300px;
 }
 .grid-item {
-    background-color: blue;
+    background-color: var(--bc-Soft-Charcoal);
     display: grid;
     place-content: center;
     position: relative;
