@@ -1,0 +1,23 @@
+@import url(../general.css);
+
+.gradient {
+    padding: 2px;
+    background: linear-gradient( 140deg, purple, blue, yellow);
+}
+
+.start-coding {
+    font-family: Verdana;
+    background-color: #000;
+    color: #a3a2a2;
+    padding: 1rem 2rem;
+}
+
+
+.start-coding:hover {
+    padding: 1.2rem 2.2rem;
+    color: #fff;
+    font-size: 17px;
+}
+.gradient:hover {
+    background: linear-gradient( 300deg, purple, blue, yellow);
+}

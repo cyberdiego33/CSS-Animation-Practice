@@ -1,0 +1,53 @@
+@import url(../general.css);
+
+
+.insta-container {
+    display: flex;
+}
+
+.insta-names {
+    color: #fff;
+    text-align: center;
+}
+
+.img {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: 4px black solid;
+    box-sizing: content-box;
+    /* overflow: hidden; */
+}
+.img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+}
+
+.relative {
+    position: relative;
+    padding: 2px;
+    border-radius: 3000px;
+    background: rgb(121, 119, 119);
+    margin: 0 20px 15px;
+}
+
+.new {
+    background: linear-gradient( yellow, red, purple);
+}
+
+.live::after {
+    content: "Live";
+    font-family: sans-serif;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    bottom: -9px;
+    transform: translateX(-50%);
+}

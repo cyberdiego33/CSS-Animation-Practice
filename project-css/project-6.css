@@ -1,0 +1,7 @@
+@import url(../general.css);
+
+
+.round-divs {
+    border-radius: 5000px;
+    padding: 30px;
+}

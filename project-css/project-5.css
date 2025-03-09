@@ -1,0 +1,36 @@
+@import url(../general.css);
+
+
+.rotate-container {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    background-color: #252222;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+@keyframes rotate {
+    20% {
+        rotate: 45deg ;
+    }
+    40% {
+        rotate: 180deg;
+    }
+    60% {
+        rotate: 270deg;
+    }
+    80% {
+        rotate: 315deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.rotate-container div {
+    width: 30px;
+    height: 30px;
+
+    animation: rotate 2s ease-in-out 0s infinite;
+}

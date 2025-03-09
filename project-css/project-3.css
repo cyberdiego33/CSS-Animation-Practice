@@ -1,0 +1,66 @@
+@import url(../general.css);
+
+* {
+    color: #fff;
+}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-container {
+    background-color: #1d1c1c;
+    padding: .5rem .6rem;
+    width: 300px;
+    border-radius: 7px;
+}
+.pen-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.pen-image img {
+    border-radius: 7px;
+}
+
+
+.profile-flex {
+    display: flex;
+    margin-top: 10px;
+}
+.profile-pics {
+    background-color: cadetblue;
+    width: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.titles p {
+    font-weight: bold;
+}
+.titles span {
+    color: rgb(201, 194, 194);
+    font-size: 13px;
+}
+.bt-div {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    transition: margin 0.15s ease-in-out,
+                height 0.15s ease-in-out;
+}
+.bt-div div {
+    background-color: black;
+    margin-right: 10px;
+    padding: 3px 4px;
+    border-radius: 3px;
+
+}
+
+.profile-container:hover .bt-div {
+    height: fit-content;
+    margin-top: 10px;
+}

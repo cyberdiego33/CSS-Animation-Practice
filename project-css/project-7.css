@@ -1,0 +1,37 @@
+@import url(../general.css);
+
+.love-container {
+    display: flex;
+}
+.love-container div {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.love-container .love-text {
+    padding-right: 2px;
+}
+
+@keyframes change-text {
+    25% {
+        content: "Anime 📺";
+    }
+    50% {
+        content: "Gym 💪";
+    }
+    75% {
+        content: "Titties 🤗";
+    }
+}
+
+.love-text::after {
+    background-color: blue;
+    border-radius: 6px;
+    padding: .5rem;
+    content: "Games 🎮";
+    height: 100%;
+    width: fit-content;
+    margin-left: 2px;
+
+    animation: change-text 4s ease-in-out 0s infinite;
+}

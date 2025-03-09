@@ -1,0 +1,18 @@
+@import url(../general.css);
+
+.circle {
+    border: 20px solid #c5b8b8;
+    border-top-color: var(--color);
+    border-radius: 1000px;
+    width: 150px;
+    aspect-ratio: 1/1;
+
+    animation: loading 2s linear infinite;
+    --color: rgb(155, 131, 87);
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
