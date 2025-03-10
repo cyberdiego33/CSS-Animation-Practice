@@ -18,14 +18,18 @@
     display: none;
 }
 
-.card:hover {
+.card-label input {
+    display: none;
+}
+
+.card-label input:checked+.card {
     transform: rotateY(180deg);
 }
 
-.card:hover .question {
+.card-label input:checked+.card .question {
     display: none;
 }
-.card:hover .answer {
+.card-label input:checked+.card .answer {
     display: block;
     transform: rotateY(180deg);
 }
