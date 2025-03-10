@@ -56,7 +56,7 @@ body {
     font-weight: 200;
 }
 
-.bottom-comment {
+/* .bottom-comment {
     position: absolute;
     left: 0;
     right: 0;
@@ -73,7 +73,7 @@ body {
     padding: 20px 10px;
     height: min(30%, 100px);
     max-height: fit-content;
-}
+} */
 .grid-item:hover .top-intro {
     width: fit-content;
 }

@@ -34,10 +34,10 @@
 }
 
 .new {
-    background: linear-gradient( yellow, red, purple);
+    background: rgb(121, 119, 119);
 }
 
-.live::after {
+/* .live::after {
     content: "Live";
     font-family: sans-serif;
     padding: 2px 4px;
@@ -50,4 +50,45 @@
     left: 50%;
     bottom: -9px;
     transform: translateX(-50%);
+} */
+
+
+.live-div,
+.live-div-2,
+.live-div-3 {
+    font-family: sans-serif;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    bottom: -9px;
+    transform: translateX(-50%);
 }
+
+.insta-label input {
+    display: none;
+}
+.insta-label-2 input {
+    display: none;
+}
+.insta-label-3 input {
+    display: none;
+}
+
+.insta-label input:checked+.relative .live-div,
+.insta-label-2 input:checked+.relative .live-div-2,
+.insta-label-3 input:checked+.relative .live-div-3
+ {
+    display: none;
+}
+.insta-label input:checked+.relative.new,
+.insta-label-2 input:checked+.relative.new,
+.insta-label-3 input:checked+.relative.new
+{
+    background: linear-gradient( yellow, red, purple);
+}
+
