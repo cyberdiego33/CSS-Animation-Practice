@@ -34,7 +34,7 @@
 }
 
 .new {
-    background: rgb(121, 119, 119);
+    background: linear-gradient( yellow, red, purple);
 }
 
 /* .live::after {
@@ -67,6 +67,8 @@
     left: 50%;
     bottom: -9px;
     transform: translateX(-50%);
+
+    display: none;
 }
 
 .insta-label input {
@@ -83,12 +85,12 @@
 .insta-label-2 input:checked+.relative .live-div-2,
 .insta-label-3 input:checked+.relative .live-div-3
  {
-    display: none;
+    display: block;
 }
 .insta-label input:checked+.relative.new,
 .insta-label-2 input:checked+.relative.new,
 .insta-label-3 input:checked+.relative.new
 {
-    background: linear-gradient( yellow, red, purple);
+    background: rgb(121, 119, 119);
 }
 
