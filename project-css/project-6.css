@@ -1,7 +1,44 @@
 @import url(../general.css);
 
+:root {
+    --circle-1-color: black;
+    --circle-2-color: ;
+    --circle-3-color: ;
+    --circle-4-color: ;
+}
+
+@keyframes color-switch {
+    10% {
+        --circle-2-color: blue;
+    }
+    50% {
+        --circle-3-color: red;
+    }
+    90% {
+        --circle-4-color: yellow;
+    }
+}
+
 
 .round-divs {
     border-radius: 5000px;
     padding: 30px;
+
+    animation: color-switch 3s linear infinite alternate;
+}
+
+.black {
+    background-color: var(--circle-1-color);
+}
+
+.blue {
+    background-color: var(--circle-2-color);
+}
+
+.red {
+    background-color: var(--circle-3-color);
+}
+
+.yellow {
+    background-color: var(--circle-4-color);
 }
